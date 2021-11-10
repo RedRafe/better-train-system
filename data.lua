@@ -1,5 +1,3 @@
-require("entities.trains")
-require("technologies.technology")
-require("recipes.recipe")
-require("entities.wagons")
-require("items.item")
+require("__better-train-system__/lib/public/paths")
+
+require(path_prototypes .. "__init__")

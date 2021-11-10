@@ -1,0 +1,1 @@
+require(path_prototypes .. "recipes/recipe")

@@ -5,5 +5,5 @@
   "author": "RedRafe",
   "factorio_version": "1.1",
   "dependencies": ["base >= 1.1"],
-  "description": "Adds three tiers of faster locomotives, and bigger cargo wagons and fluid wagons. They also stack to 20 and 50 in your inventory."
+  "description": "Adds three new tiers of faster Locomotives, bigger Cargo-Wagons and more capable Fluid-Wagons. They also stack to 20 and 50 in your inventory."
 }

@@ -17,9 +17,10 @@ mk2.inventory_size = 80
 mk2.max_speed = 1.9
 mk2.friction_force = 0.25
 mk2.air_resistance = 0.005
-mk2.color = Colors.tint1
+mk2.color = BRSColors.tier1
 --mk2.equipment_grid = "car-medium-equipment-grid"
 
+--[[
 mk2.pictures.layers[1].tint = mk2.color
 mk2.pictures.layers[1].hr_version.tint = mk2.color
 mk2.pictures.layers[2].apply_runtime_tint = true
@@ -32,6 +33,7 @@ mk2.vertical_doors.layers[3].apply_runtime_tint = true
 mk2.vertical_doors.layers[3].hr_version.apply_runtime_tint = true
 mk2.vertical_doors.layers[5].apply_runtime_tint = true
 mk2.vertical_doors.layers[5].hr_version.apply_runtime_tint = true
+]]
 
 local mk3 = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
 mk3.name = "cargo-wagon-mk3"
@@ -42,9 +44,10 @@ mk3.inventory_size = 160
 mk3.max_speed = 2.3
 mk3.friction_force = 0.01
 mk3.air_resistance = 0.0001
-mk3.color = Colors.tint2
+mk3.color = BRSColors.tier2
 --mk3.equipment_grid = "car-large-equipment-grid"
 
+--[[
 mk3.pictures.layers[1].tint = mk3.color
 mk3.pictures.layers[1].hr_version.tint = mk3.color
 mk3.pictures.layers[2].apply_runtime_tint = true
@@ -57,6 +60,7 @@ mk3.vertical_doors.layers[3].apply_runtime_tint = true
 mk3.vertical_doors.layers[3].hr_version.apply_runtime_tint = true
 mk3.vertical_doors.layers[5].apply_runtime_tint = true
 mk3.vertical_doors.layers[5].hr_version.apply_runtime_tint = true
+]]
 
 local mk4 = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
 mk4.name = "cargo-wagon-mk4"
@@ -67,9 +71,10 @@ mk4.inventory_size = 320
 mk4.max_speed = 2.7
 mk4.friction_force = 0.01
 mk4.air_resistance = 0.0001
-mk4.color = Colors.tint3
+mk4.color = BRSColors.tier3
 --mk4.equipment_grid = "car-large-equipment-grid"
 
+--[[
 mk4.pictures.layers[1].tint = mk4.color
 mk4.pictures.layers[1].hr_version.tint = mk4.color
 mk4.pictures.layers[2].apply_runtime_tint = true
@@ -82,6 +87,7 @@ mk4.vertical_doors.layers[3].apply_runtime_tint = true
 mk4.vertical_doors.layers[3].hr_version.apply_runtime_tint = true
 mk4.vertical_doors.layers[5].apply_runtime_tint = true
 mk4.vertical_doors.layers[5].hr_version.apply_runtime_tint = true
+]]
 
 data:extend({mk2, mk3, mk4})
 
@@ -95,7 +101,7 @@ fw2.max_health = 1800
 fw2.weight = 2000
 fw2.max_speed = 1.9
 fw2.capacity = 75000
-fw2.color = Colors.tint1
+fw2.color = BRSColors.tier1_fluid
 
 fw2.pictures.layers[1].tint = fw2.color
 fw2.pictures.layers[1].filenames = {}
@@ -116,7 +122,7 @@ fw3.max_health = 2000
 fw3.weight = 2200
 fw3.max_speed = 2.3
 fw3.capacity = 150000
-fw3.color = Colors.tint1
+fw3.color = BRSColors.tier2_fluid
 
 fw3.pictures.layers[1].tint = fw3.color
 fw3.pictures.layers[1].filenames = {}
@@ -137,7 +143,7 @@ fw4.max_health = 2200
 fw4.weight = 2400
 fw4.max_speed = 2.7
 fw4.capacity = 250000
-fw4.color = Colors.tint3
+fw4.color = BRSColors.tier3_fluid
 
 fw4.pictures.layers[1].tint = fw4.color
 fw4.pictures.layers[1].filenames = {}

@@ -20,7 +20,7 @@ data:extend({
         name = "cargo-wagon-mk3",
         enabled = false,
         ingredients = {
-            {"cargo-wagon-mk2", 2},
+            {"cargo-wagon-mk2", 1},
             {"steel-plate", 100},
             {"advanced-circuit", 25}
         },
@@ -32,7 +32,7 @@ data:extend({
       name = "cargo-wagon-mk4",
       enabled = false,
       ingredients = {
-          {"cargo-wagon-mk3", 2},
+          {"cargo-wagon-mk3", 1},
           {"steel-plate", 200},
           {"processing-unit", 50}
       },
@@ -58,7 +58,7 @@ data:extend({
         energy_required = 60,
         enabled = false,
         ingredients = {
-            {"locomotive-mk2", 2},
+            {"locomotive-mk2", 1},
             {"electric-engine-unit", 20},
             {"advanced-circuit", 40},
             {"steel-plate", 100}
@@ -71,7 +71,7 @@ data:extend({
       energy_required = 120,
       enabled = false,
       ingredients = {
-          {"locomotive-mk3", 2},
+          {"locomotive-mk3", 1},
           {"electric-engine-unit", 40},
           {"processing-unit", 50},
           {"steel-plate", 200}
@@ -87,7 +87,7 @@ data:extend({
         ingredients = {
             {"iron-plate", 50},
             {"pipe", 20},
-            {"fluid-wagon", 2},
+            {"fluid-wagon", 1},
             {"storage-tank", 3}
         },
         result = "fluid-wagon-mk2"
@@ -101,7 +101,7 @@ data:extend({
             {"iron-plate", 100},
             {"steel-plate", 100},
             {"pipe", 50},
-            {"fluid-wagon-mk2", 2},
+            {"fluid-wagon-mk2", 1},
             {"storage-tank", 6}
         },
         result = "fluid-wagon-mk3"
@@ -114,7 +114,7 @@ data:extend({
       ingredients = {
           {"steel-plate", 200},
           {"pipe", 80},
-          {"fluid-wagon-mk3", 2},
+          {"fluid-wagon-mk3", 1},
           {"storage-tank", 10}
       },
       result = "fluid-wagon-mk4"

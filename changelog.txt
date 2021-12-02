@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 02.12.2021
+  Changes:
+    - Balanced recipes to scale better, now require 1 of previous tier item
+    - Fixed color layers not being applied, train entities now rendered by their tier color
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 11.11.2021
   Info:

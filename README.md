@@ -35,6 +35,7 @@ Mk2, Mk3 and Mk4 train levels can be unlocked by researching three new levels of
 Available languages:
 
 - English (en)
+- Deutsch (de)
 
 You can help by translating this mod into your language. Any translation made will be included in the next release.
 

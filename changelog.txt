@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 16.03.2023
+  Changes:
+    - Added custom icons for all new tiers of train transport
+    - Train transports now have their own subgroup in the logistics tab
+    - Refactired some code to make it more readable
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 25.01.2023
   Translations:

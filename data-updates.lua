@@ -1,3 +1,3 @@
-require(path_compatibility .. 'Krastorio2')
-require(path_compatibility .. 'aai-industry')
-require(path_compatibility .. 'space-exploration')
+require(bts.path_c .. 'Krastorio2')
+require(bts.path_c .. 'aai-industry')
+require(bts.path_c .. 'space-exploration')

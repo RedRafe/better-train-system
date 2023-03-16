@@ -8,5 +8,6 @@
     "base >= 1.1"
   ],
   "homepage": "https://mods.factorio.com/mod/better-train-system",
+  "source": "https://github.com/RedRafe/better-train-system",
   "description": "Adds three new tiers of faster Locomotives, bigger Cargo-Wagons and more capable Fluid-Wagons. They also stack to 20 and 50 in your inventory."
 }

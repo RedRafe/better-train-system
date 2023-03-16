@@ -45,6 +45,7 @@ Please feel free to report any known issue! :)
 Until now, compatibility has been extended to:
 
 - [AAI Industry](https://mods.factorio.com/mod/aai-industry)
+- [Freight Forwarding](https://mods.factorio.com/mod/freight-forwarding)
 - [Krastorio2](https://mods.factorio.com/mod/Krastorio2)
 - [Space Exploration](https://mods.factorio.com/mod/space-exploration)
 

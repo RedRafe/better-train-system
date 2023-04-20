@@ -58,3 +58,11 @@ BRSColors = {
     g = 1.00, 
     b = 0.95 }, -- for solar (to be added)
 }
+
+function bts.reorder(group, subgroup, order)
+  if not data.raw["item-group"][group] then return end
+  local sub = data.raw["item-subgroup"][subgroup]
+  if not sub then return end
+  sub.group = group
+  sub.order = order
+end

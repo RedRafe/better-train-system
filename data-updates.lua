@@ -1,3 +1,4 @@
-require(bts.path_c .. 'Krastorio2')
-require(bts.path_c .. 'aai-industry')
-require(bts.path_c .. 'space-exploration')
+require "compatibility.Krastorio2"
+require "compatibility.aai-industry"
+require "compatibility.space-exploration"
+require "compatibility.schall-transport-group"

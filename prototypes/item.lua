@@ -53,6 +53,12 @@ data:extend({
     group = "logistics",
     order = "e-4"
   },
+  {
+    type = "item-subgroup",
+    name = "train-transport-[e]-5",
+    group = "logistics",
+    order = "e-5"
+  },
 })
 
 for _, item in pairs(items) do

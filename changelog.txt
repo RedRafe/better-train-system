@@ -3,7 +3,8 @@ Version: 0.1.5
 Date: 18.03.2023
   Changes:
     - Added compatibility with Schall Transport Group
-    - Rebalanced speed and consumption of locomotives
+    - Rebalanced speed and consumption of locomotives & wagons
+      (Power consumption scales with the squared ratio of speeds)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 18.03.2023

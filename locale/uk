@@ -1,0 +1,37 @@
+[item-name]
+cargo-wagon-mk2=Вантажний вагон МК2
+cargo-wagon-mk3=Вантажний вагон МК3
+cargo-wagon-mk4=Вантажний вагон МК4
+
+fluid-wagon-mk2=Вагон-цистерна МК2
+fluid-wagon-mk3=Вагон-цистерна МК3
+fluid-wagon-mk4=Вагон-цистерна МК4
+
+locomotive-mk2=Локомотив МК2
+locomotive-mk3=Локомотив МК3
+locomotive-mk4=Локомотив МК4
+
+[item-description]
+
+[entity-name]
+cargo-wagon-mk2=Вантажний вагон МК2
+cargo-wagon-mk3=Вантажний вагон МК3
+cargo-wagon-mk4=Вантажний вагон МК4
+
+fluid-wagon-mk2=Вагон-цистерна МК2
+fluid-wagon-mk3=Вагон-цистерна МК3
+fluid-wagon-mk4=Вагон-цистерна МК4
+
+locomotive-mk2=Локомотив МК2
+locomotive-mk3=Локомотив МК3
+locomotive-mk4=Локомотив МК4
+
+
+[technology-name]
+railway-2=Залізниця 2
+railway-3=Залізниця 3
+railway-4=Залізниця 4
+
+[technology-description]
+
+[equipment-name]

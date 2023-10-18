@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 18.10.2023
+  Changes:
+    - Added settings for max speed and capacity
+  Translations:
+    - Fixed Ukrainian translation config errorr
+---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 18.03.2023
   Changes:

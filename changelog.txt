@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 20.10.2023
+  Changes:
+    - Added settings for max speed, cargo inventory and fluid capacity
+  Compatibility:
+    - Removed field "fuel_category" as "fuel_categories" takes precedence
+---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 18.03.2023
   Changes:

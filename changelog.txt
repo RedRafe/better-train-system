@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2024-04-02
+  Compatibility:
+    - Added compatibility with ElectricTrains mod
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 20.10.2023
   Changes:
@@ -7,37 +12,37 @@ Date: 20.10.2023
     - Removed field "fuel_category" as "fuel_categories" takes precedence
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
-Date: 18.03.2023
+Date: 2023-03-18
   Changes:
     - Added compatibility with Schall Transport Group
     - Rebalanced speed and consumption of locomotives & wagons
       (Power consumption scales with the squared ratio of speeds)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
-Date: 18.03.2023
+Date: 2023-03-18
   Translations:
     - Added RU locale
     - Added IT locale
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
-Date: 16.03.2023
+Date: 2023-03-16
   Changes:
     - Added custom icons for all new tiers of train transport
     - Train transports now have their own subgroup in the logistics tab
     - Refactired some code to make it more readable
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
-Date: 25.01.2023
+Date: 2023-01-25
   Translations:
     - Added DE locale
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
-Date: 02.12.2021
+Date: 2021-12-02
   Changes:
     - Balanced recipes to scale better, now require 1 of previous tier item
     - Fixed color layers not being applied, train entities now rendered by their tier color
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 11.11.2021
+Date: 2021-11-11
   Info:
     - Release

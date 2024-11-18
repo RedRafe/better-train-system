@@ -17,6 +17,6 @@ local iwed = "item-with-entity-data"
 data.raw[iwed]["locomotive"].icon, data.raw[iwed]["locomotive-mk3"].icon = data.raw[iwed]["locomotive-mk3"].icon, data.raw[iwed]["locomotive"].icon
 
 -- update subgroups for vanilla
-data.raw[iwed]["locomotive"].subgroup  = "train-transport-[e]-2"
-data.raw[iwed]["cargo-wagon"].subgroup = "train-transport-[e]-3"
-data.raw[iwed]["fluid-wagon"].subgroup = "train-transport-[e]-4"
+data.raw[iwed]["locomotive"].subgroup  = "train-transport-e-2"
+data.raw[iwed]["cargo-wagon"].subgroup = "train-transport-e-3"
+data.raw[iwed]["fluid-wagon"].subgroup = "train-transport-e-4"

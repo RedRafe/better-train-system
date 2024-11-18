@@ -1,11 +1,11 @@
 {
   "name": "better-train-system",
-  "version": "0.3.0",
+  "version": "2.0.0",
   "title": "Better Train System",
   "author": "RedRafe",
-  "factorio_version": "1.1",
+  "factorio_version": "2.0",
   "dependencies": [
-    "base >= 1.1"
+    "base >= 2.0"
   ],
   "homepage": "https://mods.factorio.com/mod/better-train-system",
   "source": "https://github.com/RedRafe/better-train-system",

@@ -38,7 +38,7 @@ data:extend({
     name = "railway-3",
     icon_size = 256,
     icon = bts.path_g .. "railway-t2.png",
-    prerequisites = {"railway-2", "advanced-electronics"},
+    prerequisites = {"railway-2", "advanced-circuit"},
     effects = 
     {
       {
@@ -73,7 +73,7 @@ data:extend({
     name = "railway-4",
     icon_size = 256,
     icon = bts.path_g .. "railway-t3.png",
-    prerequisites = {"railway-3", "advanced-electronics-2"},
+    prerequisites = {"railway-3", "processing-unit"},
     effects = 
     {
       {

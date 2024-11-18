@@ -66,3 +66,10 @@ function bts.reorder(group, subgroup, order)
   sub.group = group
   sub.order = order
 end
+
+function bts.tint(layer, tint)
+  if not layer then
+    return
+  end
+  layer.tint = tint
+end

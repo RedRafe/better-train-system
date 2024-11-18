@@ -7,11 +7,11 @@ local mk4 = data.raw.locomotive['locomotive-mk4']
 for _, entity in pairs({ mk3, mk4 }) do
   
   entity.reversing_power_modifier = 1.0
-  entity.burner.fuel_categories = {'electrical'}
-  entity.burner.fuel_category = nil
-  entity.burner.fuel_inventory_size = 1
-  entity.burner.burnt_inventory_size = 1
-  entity.burner.smoke = nil
+  entity.energy_source.fuel_categories = {'electrical'}
+  entity.energy_source.fuel_category = nil
+  entity.energy_source.fuel_inventory_size = 1
+  entity.energy_source.burnt_inventory_size = 1
+  entity.energy_source.smoke = nil
   entity.stop_trigger = {{ 
     type = 'play-sound',
     sound = {{ filename = '__base__/sound/train-breaks.ogg', volume = 0.3 }}

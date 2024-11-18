@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "double-setting",
-    name = "bts:max_speed",
+    name = "bts-max_speed",
     setting_type = "startup",
     default_value = 562,
     minimum_value = 1,
@@ -10,7 +10,7 @@ data:extend({
   },
   {
     type = "double-setting",
-    name = "bts:max_items",
+    name = "bts-max_items",
     setting_type = "startup",
     default_value = 320,
     allowed_values = { 320, 400, 800, 1600 },
@@ -18,10 +18,10 @@ data:extend({
   },
   {
     type = "double-setting",
-    name = "bts:max_fluid",
+    name = "bts-max_fluid",
     setting_type = "startup",
     default_value = 250000,
-    allowed_values = { 250000, 500000, 1000000 },
+    allowed_values = { 250000, 500000, 1000000, 2000000 },
     order = "c"
   }
 })

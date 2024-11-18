@@ -30,6 +30,7 @@ local function extendItems(source)
       icon         = path_i .. source.iconpath .. ".png", 
       icon_mipmaps = 4, 
       icon_size    = 64, 
+      weight       = 200000,
     }
   })
 end

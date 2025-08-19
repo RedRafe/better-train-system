@@ -1,4 +1,4 @@
-if not mods['Krastorio2'] then return end
+if not mods['Krastorio2-spaced-out'] then return end
 
 local insert = table.insert
 

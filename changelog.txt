@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-08-19
+  Compatibility:
+    - Fixed compatibility with Krastorio2
+    - Added compatibility with Krastorio2 Spaced Out
+---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 2024-12-10
   Changes:

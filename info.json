@@ -1,11 +1,12 @@
 {
   "name": "better-train-system",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "title": "Better Train System",
   "author": "RedRafe",
   "factorio_version": "2.0",
   "dependencies": [
-    "base >= 2.0"
+    "base >= 2.0",
+    "? elevated-rails"
   ],
   "homepage": "https://mods.factorio.com/mod/better-train-system",
   "source": "https://github.com/RedRafe/better-train-system",

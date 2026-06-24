@@ -23,3 +23,6 @@ table.insert(data.raw.recipe['locomotive-mk3'].ingredients, { type = 'item', nam
 
 -- Update tech dependencies
 table.insert(data.raw.technology['railway-3'].prerequisites, 'deg-electric-railway')
+
+-- Update Electric Locomotive stack size
+data.raw['item-with-entity-data']['deg-electric-locomotive'].stack_size = data.raw['item-with-entity-data']['locomotive'].stack_size

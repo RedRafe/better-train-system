@@ -26,3 +26,43 @@ table.insert(data.raw.technology['railway-3'].prerequisites, 'deg-electric-railw
 
 -- Update Electric Locomotive stack size
 data.raw['item-with-entity-data']['deg-electric-locomotive'].stack_size = data.raw['item-with-entity-data']['locomotive'].stack_size
+
+-- Add mk3 and mk4 electric types
+data:extend({
+  {
+    type = "item",
+    name = "locomotive-mk3-fuel-dummy",
+    --icon = "__base__/graphics/icons/accumulator.png",
+    icons = {
+      {icon = "__ElectricTrains__/graphics/icons/electric-locomotive.png", icon_size = 32},
+      {icon = "__ElectricTrains__/graphics/icons/lightning-bolt.png", icon_size = 32, scale = 0.5, shift = {12, 12}}
+    },
+    fuel_category = "electrical",
+    fuel_value = tostring(settings.startup['bts-mk3_electric_capacity'].value) .. "J",
+    subgroup = "raw-material",
+    order = "h[battery]",
+    stack_size = 1,
+    fuel_acceleration_multiplier = 2.2,
+    --fuel_acceleration_multiplier_quality_bonus = 0,
+    fuel_top_speed_multiplier = 1.1,
+    --fuel_top_speed_multiplier_quality_bonus = 0
+  },
+  {
+    type = "item",
+    name = "locomotive-mk4-fuel-dummy",
+    --icon = "__base__/graphics/icons/accumulator.png",
+    icons = {
+      {icon = "__ElectricTrains__/graphics/icons/electric-locomotive.png", icon_size = 32},
+      {icon = "__ElectricTrains__/graphics/icons/lightning-bolt.png", icon_size = 32, scale = 0.5, shift = {12, 12}}
+    },
+    fuel_category = "electrical",
+    fuel_value = tostring(settings.startup['bts-mk4_electric_capacity'].value) .. "J",
+    subgroup = "raw-material",
+    order = "h[battery]",
+    stack_size = 1,
+    fuel_acceleration_multiplier = 2.2,
+    --fuel_acceleration_multiplier_quality_bonus = 0,
+    fuel_top_speed_multiplier = 1.1,
+    --fuel_top_speed_multiplier_quality_bonus = 0
+  },
+})

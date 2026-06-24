@@ -6,7 +6,8 @@
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0",
-    "? elevated-rails"
+    "? elevated-rails",
+    "? ElectricTrains"
   ],
   "homepage": "https://mods.factorio.com/mod/better-train-system",
   "source": "https://github.com/RedRafe/better-train-system",

@@ -1,9 +1,9 @@
 {
   "name": "better-train-system",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "title": "Better Train System",
   "author": "RedRafe",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.0",
     "? elevated-rails"

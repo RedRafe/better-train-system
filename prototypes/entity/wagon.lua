@@ -5,6 +5,11 @@ local MAX_FLUID = settings.startup['bts-max_fluid'].value or 250000
 local cargo_wagon = data.raw['cargo-wagon']['cargo-wagon']
 cargo_wagon.fast_replaceable_group = 'cargo-wagon'
 
+if feature_flags.quality then
+    cargo_wagon.quality_affects_max_speed = true
+    cargo_wagon.quality_affects_inventory_size = true
+end
+
 -- -- Cargo Wagons
 local mk2 = table.deepcopy(cargo_wagon)
 mk2.name = 'cargo-wagon-mk2'
@@ -48,6 +53,11 @@ data:extend({ mk2, mk3, mk4 })
 local fluid_wagon = data.raw['fluid-wagon']['fluid-wagon']
 fluid_wagon.fast_replaceable_group = 'fluid-wagon'
 fluid_wagon.next_upgrade = 'fluid-wagon-mk2'
+
+if feature_flags.quality then
+    fluid_wagon.quality_affects_max_speed = true
+    fluid_wagon.quality_affects_capacity = true
+end
 
 local fw2 = table.deepcopy(fluid_wagon)
 fw2.name = 'fluid-wagon-mk2'

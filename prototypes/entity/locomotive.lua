@@ -4,6 +4,10 @@ local locomotive = data.raw.locomotive.locomotive
 locomotive.fast_replaceable_group = 'locomotive'
 locomotive.next_upgrade = 'locomotive-mk2'
 
+if feature_flags.quality then
+    locomotive.quality_affects_max_speed = true
+end
+
 local mk2 = table.deepcopy(locomotive)
 mk2.name = 'locomotive-mk2'
 mk2.minable.result = mk2.name

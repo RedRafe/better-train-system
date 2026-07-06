@@ -1,6 +1,10 @@
 local MAX_SPEED = settings.startup['bts-max_speed'].value or 562
 
-local mk2 = table.deepcopy(data.raw['locomotive']['locomotive'])
+local locomotive = data.raw.locomotive.locomotive
+locomotive.fast_replaceable_group = 'locomotive'
+locomotive.next_upgrade = 'locomotive-mk2'
+
+local mk2 = table.deepcopy(locomotive)
 mk2.name = 'locomotive-mk2'
 mk2.minable.result = mk2.name
 mk2.max_health = 2000
@@ -14,10 +18,11 @@ mk2.energy_source.fuel_category = nil
 mk2.energy_source.fuel_categories = { 'chemical' }
 mk2.equipment_grid = 'small-equipment-grid'
 mk2.pictures.rotated.layers[1].tint = mk2.color
+mk2.next_upgrade = 'locomotive-mk3'
 bts.tint(mk2.pictures.rotated and mk2.pictures.rotated.layers[1], mk2.color)
 bts.tint(mk2.pictures.sloped and mk2.pictures.sloped.layers[1], mk2.color)
 
-local mk3 = table.deepcopy(data.raw['locomotive']['locomotive'])
+local mk3 = table.deepcopy(locomotive)
 mk3.name = 'locomotive-mk3'
 mk3.minable.result = mk3.name
 mk3.max_health = 2500
@@ -30,10 +35,11 @@ mk3.color = BRSColors.tier2_fluid
 mk3.energy_source.fuel_category = nil
 mk3.energy_source.fuel_categories = { 'chemical' }
 mk3.equipment_grid = 'medium-equipment-grid'
+mk3.next_upgrade = 'locomotive-mk4'
 bts.tint(mk3.pictures.rotated and mk3.pictures.rotated.layers[1], mk3.color)
 bts.tint(mk3.pictures.sloped and mk3.pictures.sloped.layers[1], mk3.color)
 
-local mk4 = table.deepcopy(data.raw['locomotive']['locomotive'])
+local mk4 = table.deepcopy(locomotive)
 mk4.name = 'locomotive-mk4'
 mk4.minable.result = mk4.name
 mk4.max_health = 3000
@@ -46,6 +52,7 @@ mk4.color = BRSColors.tier3_fluid
 mk4.energy_source.fuel_category = nil
 mk4.energy_source.fuel_categories = { 'chemical' }
 mk4.equipment_grid = 'large-equipment-grid'
+mk4.next_upgrade = nil
 bts.tint(mk4.pictures.rotated and mk4.pictures.rotated.layers[1], mk4.color)
 bts.tint(mk4.pictures.sloped and mk4.pictures.sloped.layers[1], mk4.color)
 

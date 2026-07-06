@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.1
+Date: 2026-07-06
+  Changes:
+    - Added locomotive, cargo-wagon. fluid-wagon upgrade planner
+  Bugfixes:
+    - Fixed entity icons not being updated correctly
+---------------------------------------------------------------------------------------------------
 Version: 3.0.0
 Date: 2026-07-01
   Changes:

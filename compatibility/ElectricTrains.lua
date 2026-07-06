@@ -4,6 +4,9 @@ if not mods['ElectricTrains'] then return end
 local mk3 = data.raw.locomotive['locomotive-mk3']
 local mk4 = data.raw.locomotive['locomotive-mk4']
 
+-- Update Electric Locomotive stack size
+data.raw['item-with-entity-data']['deg-electric-locomotive'].stack_size = data.raw['item-with-entity-data']['locomotive'].stack_size
+
 for _, entity in pairs({ mk3, mk4 }) do
   
   entity.reversing_power_modifier = 1.0

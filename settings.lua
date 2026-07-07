@@ -25,3 +25,28 @@ data:extend({
     order = "c"
   }
 })
+
+
+-- ElectricTrains mod compatibility settings
+if mods['ElectricTrains'] then
+  data:extend({
+    {
+      type = "int-setting",
+      name = "bts-mk3_electric_capacity",
+      setting_type = "startup",
+      default_value = 500000000,
+      minimum_value = 250000000,
+      maximum_value = 100000000000,
+      order = "dd"
+    },
+    {
+      type = "int-setting",
+      name = "bts-mk4_electric_capacity",
+      setting_type = "startup",
+      default_value = 1000000000,
+      minimum_value = 250000000,
+      maximum_value = 100000000000,
+      order = "de"
+    },
+  })
+end

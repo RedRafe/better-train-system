@@ -6,9 +6,9 @@ local function ElectricTrains()
 end
 
 script.on_init(function()
-  ElectricTrains()
+    ElectricTrains()
 end)
 
 script.on_configuration_changed(function()
-  ElectricTrains()
+    ElectricTrains()
 end)

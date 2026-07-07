@@ -1,6 +1,6 @@
-require "compatibility.Krastorio2"
-require "compatibility.Krastorio2-spaced-out"
-require "compatibility.aai-industry"
-require "compatibility.space-exploration"
-require "compatibility.schall-transport-group"
-require "compatibility.ElectricTrains"
+require 'compatibility.Krastorio2'
+require 'compatibility.Krastorio2-spaced-out'
+require 'compatibility.aai-industry'
+require 'compatibility.space-exploration'
+require 'compatibility.schall-transport-group'
+require 'compatibility.ElectricTrains'

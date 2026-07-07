@@ -1,5 +1,5 @@
 # Better Train System
-This mod adds 3 new tiers of faster Locomotives, bigger Cargo-Wagons and more capable Fluid-Wagons. They also stack to 20, 50 and 50 in your inventory. With settings to tweak speed, cargo inventory and fluid capacity.
+This mod adds 3 new tiers of faster Locomotives, bigger Cargo-Wagons and more capable Fluid-Wagons. They also stack to 20, 50 and 50 in your inventory. With settings to tweak speed, cargo inventory and fluid capacity. If quality is enabled, quality will also affect acceleration, max speed, inventory size and fluid capacity.
 
 ---
 
@@ -61,6 +61,7 @@ Until now, compatibility has been extended to:
 
 - [AAI Industry](https://mods.factorio.com/mod/aai-industry)
 - [Freight Forwarding](https://mods.factorio.com/mod/FreightForwarding)
+- [ElectricTrains](https://mods.factorio.com/mod/ElectricTrains)
 - [Krastorio2](https://mods.factorio.com/mod/Krastorio2)
 - [Space Exploration](https://mods.factorio.com/mod/space-exploration)
 - [Schall Transport Groups](https://mods.factorio.com/mod/SchallTransportGroup)

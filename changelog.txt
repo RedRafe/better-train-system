@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.2
+Date: 2026-07-06
+  Changes:
+    - Quality affects max speed, inventory size, & fluid capacity
+---------------------------------------------------------------------------------------------------
+Version: 3.0.1
+Date: 2026-07-06
+  Changes:
+    - Added locomotive, cargo-wagon. fluid-wagon upgrade planner
+  Bugfixes:
+    - Fixed entity icons not being updated correctly
+---------------------------------------------------------------------------------------------------
+Version: 3.0.0
+Date: 2026-07-01
+  Changes:
+    - Updated to Factorio 2.1
+---------------------------------------------------------------------------------------------------
 Version: 2.2.1
 Date: 2026-02-18
   Changes:

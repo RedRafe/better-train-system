@@ -2,8 +2,16 @@ local MAX_SPEED = settings.startup['bts-max_speed'].value or 562
 local MAX_ITEMS = settings.startup['bts-max_items'].value or 320
 local MAX_FLUID = settings.startup['bts-max_fluid'].value or 250000
 
+local cargo_wagon = data.raw['cargo-wagon']['cargo-wagon']
+cargo_wagon.fast_replaceable_group = 'cargo-wagon'
+
+if feature_flags.quality then
+    cargo_wagon.quality_affects_max_speed = true
+    cargo_wagon.quality_affects_inventory_size = true
+end
+
 -- -- Cargo Wagons
-local mk2 = table.deepcopy(data.raw['cargo-wagon']['cargo-wagon'])
+local mk2 = table.deepcopy(cargo_wagon)
 mk2.name = 'cargo-wagon-mk2'
 mk2.minable.result = mk2.name
 mk2.max_health = 1200
@@ -13,8 +21,9 @@ mk2.max_speed = MAX_SPEED / 216 * 0.6 + 0.3
 mk2.friction_force = 0.25
 mk2.air_resistance = 0.005
 mk2.color = BRSColors.tier1
+mk2.next_upgrade = 'cargo-wagon-mk3'
 
-local mk3 = table.deepcopy(data.raw['cargo-wagon']['cargo-wagon'])
+local mk3 = table.deepcopy(cargo_wagon)
 mk3.name = 'cargo-wagon-mk3'
 mk3.minable.result = mk3.name
 mk3.max_health = 1800
@@ -24,8 +33,9 @@ mk3.max_speed = MAX_SPEED / 216 * 0.8 + 0.3
 mk3.friction_force = 0.01
 mk3.air_resistance = 0.0001
 mk3.color = BRSColors.tier2
+mk3.next_upgrade = 'cargo-wagon-mk4'
 
-local mk4 = table.deepcopy(data.raw['cargo-wagon']['cargo-wagon'])
+local mk4 = table.deepcopy(cargo_wagon)
 mk4.name = 'cargo-wagon-mk4'
 mk4.minable.result = mk4.name
 mk4.max_health = 2200
@@ -35,12 +45,21 @@ mk4.max_speed = MAX_SPEED / 216 + 0.3
 mk4.friction_force = 0.01
 mk4.air_resistance = 0.0001
 mk4.color = BRSColors.tier3
+mk4.next_upgrade = nil
 
 data:extend({ mk2, mk3, mk4 })
 
 -- -- Fluid Wagons
+local fluid_wagon = data.raw['fluid-wagon']['fluid-wagon']
+fluid_wagon.fast_replaceable_group = 'fluid-wagon'
+fluid_wagon.next_upgrade = 'fluid-wagon-mk2'
 
-local fw2 = table.deepcopy(data.raw['fluid-wagon']['fluid-wagon'])
+if feature_flags.quality then
+    fluid_wagon.quality_affects_max_speed = true
+    fluid_wagon.quality_affects_capacity = true
+end
+
+local fw2 = table.deepcopy(fluid_wagon)
 fw2.name = 'fluid-wagon-mk2'
 fw2.minable.result = fw2.name
 fw2.max_health = 1800
@@ -50,8 +69,9 @@ fw2.capacity = MAX_FLUID * (3 / 10)
 fw2.color = BRSColors.tier1_fluid
 bts.tint(fw2.pictures.rotated and fw2.pictures.rotated.layers[1], fw2.color)
 bts.tint(fw2.pictures.sloped and fw2.pictures.sloped.layers[1], fw2.color)
+fw2.next_upgrade = 'fluid-wagon-mk3'
 
-local fw3 = table.deepcopy(data.raw['fluid-wagon']['fluid-wagon'])
+local fw3 = table.deepcopy(fluid_wagon)
 fw3.name = 'fluid-wagon-mk3'
 fw3.minable.result = fw3.name
 fw3.max_health = 2000
@@ -61,8 +81,9 @@ fw3.capacity = MAX_FLUID * (3 / 5)
 fw3.color = BRSColors.tier2_fluid
 bts.tint(fw3.pictures.rotated and fw3.pictures.rotated.layers[1], fw3.color)
 bts.tint(fw3.pictures.sloped and fw3.pictures.sloped.layers[1], fw3.color)
+fw2.next_upgrade = 'fluid-wagon-mk4'
 
-local fw4 = table.deepcopy(data.raw['fluid-wagon']['fluid-wagon'])
+local fw4 = table.deepcopy(fluid_wagon)
 fw4.name = 'fluid-wagon-mk4'
 fw4.minable.result = fw4.name
 fw4.max_health = 2200
@@ -72,5 +93,6 @@ fw4.capacity = MAX_FLUID
 fw4.color = BRSColors.tier3_fluid
 bts.tint(fw4.pictures.rotated and fw4.pictures.rotated.layers[1], fw4.color)
 bts.tint(fw4.pictures.sloped and fw4.pictures.sloped.layers[1], fw4.color)
+fw4.next_upgrade = nil
 
 data:extend({ fw2, fw3, fw4 })
